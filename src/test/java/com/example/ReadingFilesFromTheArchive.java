@@ -24,7 +24,7 @@ public class ReadingFilesFromTheArchive {
 
     @Test
     void pdfReadingFileFromTheArchiveTest() throws Exception {
-        ZipFile zipFile = new ZipFile("C:\\Users\\zdor2\\IdeaProjects\\HW_9.WorkingWithFiles\\src\\test\\resources\\CryptoProPDF_UserGuide.zip");
+        ZipFile zipFile = new ZipFile("src/test/resources/CryptoProPDF_UserGuide.zip");
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
         while (entries.hasMoreElements()){
@@ -37,7 +37,7 @@ public class ReadingFilesFromTheArchive {
 
     @Test
     void csvReadingFileFromTheArchiveTest() throws Exception {
-        ZipFile zipFile = new ZipFile("C:\\Users\\zdor2\\IdeaProjects\\HW_9.WorkingWithFiles\\src\\test\\resources\\Sample_import.zip");
+        ZipFile zipFile = new ZipFile("src/test/resources/Sample_import.zip");
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
         while (entries.hasMoreElements()) {
@@ -56,7 +56,7 @@ public class ReadingFilesFromTheArchive {
 
     @Test
     void xlsReadingFileTheArchiveTest() throws Exception {
-        ZipFile zipFile = new ZipFile("C:\\Users\\zdor2\\IdeaProjects\\HW_9.WorkingWithFiles\\src\\test\\resources\\laboratorii_1.zip");
+        ZipFile zipFile = new ZipFile("src/test/resources/laboratorii_1.zip");
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
         while (entries.hasMoreElements()){
@@ -75,7 +75,7 @@ public class ReadingFilesFromTheArchive {
 
     @Test
     void pdfReadingFileFromTheArchiveTest2() throws Exception {
-        ZipFile zipFile = new ZipFile("C:\\Users\\zdor2\\IdeaProjects\\HW_9.WorkingWithFiles\\src\\test\\resources\\CryptoProPDF_UserGuide.zip");
+        ZipFile zipFile = new ZipFile("src/test/resources/CryptoProPDF_UserGuide.zip");
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
         while (entries.hasMoreElements()){

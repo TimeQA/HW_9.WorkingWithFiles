@@ -45,6 +45,7 @@ public class JsonParse {
         Squad squad = mapper.readValue(new InputStreamReader(is), Squad.class);
 
         String[] powers = new String[]{"Radiation resistance", "Turning tiny", "Radiation blast"};
+
         assertThat(squad.getSquadName()).isEqualTo("Super hero squad");
         assertThat(squad.getHomeTown()).isEqualTo("Metro City");
         assertThat(squad.getFormed()).isEqualTo(2016);
