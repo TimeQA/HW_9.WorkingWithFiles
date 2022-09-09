@@ -39,7 +39,7 @@ public class JsonParse {
     }
 
     @Test
-    public void jsonTestWithGetter() throws Exception {
+    public void jsonTestWithGetterSimpleArray() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         InputStream is = classLoader.getResourceAsStream("FileForTest2.json");
         Squad squad = mapper.readValue(new InputStreamReader(is), Squad.class);
